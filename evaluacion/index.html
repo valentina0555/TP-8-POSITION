@@ -10,203 +10,257 @@
             background-color: rgba(243, 243, 243, 0.885);
         }
 
+        /*sirve para cambiar el colorde fondo*/
+
         .container {
+            /*contenedor de las cartas*/
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 50px;
+            margin: 85px;
 
         }
 
-        .carta1 {
+        /*usé un display flex para mover las cartas, un align-items para alienarlas,justify center para centrar
+        y un margin para que no esten pegadas al borde d arriba*/
+
+        .carta {
             background-color: white;
+            /*esto es para cambiar el color del fondo de la carta*/
             display: flex;
+            /*sirve para mover la carta o imagen*/
             justify-content: space-around;
+            /*un justify space-around para la separacion de las cartas*/
             flex-direction: column;
+            /*un flex column para que las cartas esten en posicion vertical*/
             border-radius: 12px;
+            /*border radius para redondear las puntas de las imagenes y las cartas*/
 
             padding: 15px;
+            /*el padding sirve para la separacion de los cuatro lados*/
             margin-right: 15px;
+            /*un margin rigth para la separacion del costado*/
+            position: relative;
+            /*el position relative es para pisicionar un elemento en referencia a la posicion absolute*/
 
 
         }
 
-        .imagencarta1 {
+
+
+        .informacion {
             display: flex;
-            justify-content: center;
-            margin: 16px;
 
-
-
-        }
-
-        .infocarta1 {
-            display: flex;
+            /*sirve para mover la carta,imagen, y la informacion*/
             align-items: center;
+            /*sirve para alinear la informacion*/
             justify-content: center;
+            /*sirve para centrar*/
             flex-direction: column;
+            /*sirve para poner la informacion en forma vertical*/
             text-align: center;
+            /*centra la informacion*/
+
+            border-bottom: solid 1px rgba(202, 196, 196, 0.959);
+            /*esto sirve para hacer la linea del medio*/
+            padding: 12px;
+            /*sirve para separar la informacion de la linea*/
 
 
-        }
-
-        .carta2 {
-            background-color: white;
-            display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            padding: 15px;
-            border-radius: 12px;
-            
 
         }
 
-        .imagencarta2 {
+
+
+        .imagen {
             display: flex;
+            /*sirve para mover la img*/
             justify-content: center;
+            /*centra la imagen*/
             margin: 12px;
+            /*sirve para el espacio de la img y el borde de arriba*/
 
         }
 
         img {
             border-radius: 12px;
+            /*es para rodendear las puntas de la img*/
         }
 
 
-        .infocarta2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
 
-        }
+        .trabajos {
 
-        .trabajocarta1 {
-            display: flex;
             margin: 10px;
+            /*este margin lo utilice para la separacion del trabajo entre el nombre y la demás info*/
         }
 
-        .trabajocarta2 {
-            display: flex;
-            margin: 10px;
-        }
 
-        .logoscarta1 {
+
+
+        .logos {
             display: flex;
+            /*es para que los logos se puedan mover*/
             align-items: center;
+            /*para alienarlos*/
             justify-content: space-evenly;
+            /*usé un space evenly para el espacio entre los logos*/
             margin-top: 20px;
+            /*un margin top para separar los logos de la informacion*/
+            padding-top: 30px;
+            /*sirve para separar los logos de la linea*/
+
         }
 
-        .logoscarta2 {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            margin-top: 20px;
-
-        }
-
-        .online1 {
+        .online {
             background-color: rgb(7, 212, 7);
-            position: relative;
-
+            /*esto es para cambiar el color del fondo*/
+            position: absolute;
+            /*sirve para posicionar un elemento en un lugar especifico dentro de la caja padre*/
             border-radius: 10px;
+            /*sirve para redondear las puntas*/
             color: white;
+            /*cambia el color de la letra*/
             width: 60px;
+            /*sirve para el ancho*/
             text-align: center;
+            /*centra el texto*/
+            top: 5px;
+            /*sirve para la separacion del borde d arriba*/
+            right: 4px;
+            /*sirve para el espacio del lado derecho*/
+
+
 
 
         }
 
-        .offine2 {
+        .offine {
             background-color: red;
-            position: relative;
+            /*esto es para cambiar el color del fondo*/
+            position: absolute;
+            /*sirve para posicionar un elemento en un lugar especifico dentro de la caja padre*/
             border-radius: 10px;
+            /*sirve para redondear las puntas*/
             color: white;
+            /*cambia el color de la letra*/
             width: 60px;
+            /*sirve para el ancho*/
             text-align: center;
-            
+            /*centra el texto*/
+            top: 5px;
+            /*sirve para la separacion del borde d arriba*/
+            right: 4px;
+            /*sirve para el espacio del lado derecho*/
 
         }
-       
 
-        
+        .contactar {
+            display: flex;
+            /*es para que se pueda mover*/
+            position: absolute;
+            /*sirve para posicionar un elemento en un lugar especifico dentro de la caja padre*/
+            background-color: rgb(27, 114, 255);
+            /*sirve para el color del fondo*/
+            color: white;
+            /*color de la letra*/
+            right: 12px;
+            /*separacion del lado derecho*/
+            bottom: 17px;
+            /*sirve para moverlo hacia abajo*/
+            padding: 17px;
+            /*es para la separacion de los cuatro lados*/
+            border-radius: 8px;
+            /*redondear los bordes*/
+            gap: 5px;
+            /*para la separacion entre el sobre y el "contactar"*/
 
+
+
+
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
 
-        <div class="carta1">
-            <div class="online1"><b>online</b></div>
+        <div class="carta">
+            <div class="online"><b>online</b></div>
 
-            <div class="imagencarta1">
+            <div class="imagen">
 
                 <img src="https://pbs.twimg.com/profile_images/378800000024777833/bff156a54c9d68146dd0454d426fe9e1_400x400.jpeg"
                     width="150px" style="border: 3px solid rgb(0, 157, 255);">
             </div>
 
-            <div class="infocarta1">
+            <div class="informacion">
                 <div><b>Ana García</b></div>
-                <div class="trabajocarta1">Desarrolladora WEb Frontend</div>
+                <div class="trabajos">Desarrolladora WEb Frontend</div>
                 <div>Apasionada por crear experiencias<br>web increibles para toda la<br>comunidad de Rio Negro</div>
             </div>
 
-            <div class="logoscarta1">
+            <div class="logos">
                 <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" width="30px">
                 </div>
                 <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" width="30px">
                 </div>
                 <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="30px">
                 </div>
             </div>
 
 
         </div>
 
-        <div class="carta2">
-            <div class="offine2"><b>offine</b></div>
+        <div class="carta">
+            <div class="offine"><b>offine</b></div>
 
 
-            <div class="imagencarta2">
+            <div class="imagen">
                 <img src="https://pbs.twimg.com/profile_images/378800000024777833/bff156a54c9d68146dd0454d426fe9e1_400x400.jpeg"
                     width="150px" style="border: 3px solid rgb(0, 157, 255);">
 
             </div>
-            <div class="infocarta2">
+            <div class="informacion">
                 <div><b>Mina Murray</b></div>
-                <div class="trabajocarta2">Backend Developer</div>
+                <div class="trabajos">Backend Developer</div>
                 <div>Experiencia desarrollando micro-<br>servicios y serviciosREST.<br>Experiencia en AWS.</div>
 
             </div>
-            <div class="logoscarta2">
+            <div class="logos">
                 <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" width="30px">
                 </div>
                 <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" width="30px">
                 </div>
                 <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="20px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="30px">
                 </div>
             </div>
 
-           
+
 
         </div>
-        <div class="contactar">contactar</div>
+
+        <!--empecé con un div para las dos cartas, y dentro de el primer div, las separé en dos cajas distintas
+        a cada una con su información,imagenes,y logos.Cree las clases para el css, utilicé la misma clase para las dos cartas.-->
 
 
 
-
+        <div class="contactar">
+            <img src="https://cdn-icons-png.flaticon.com/128/25/25647.png" width="15px">
+            <b>contactar</b>
+        </div>
 
 
     </div>
+
+
+
 
 </body>
 
